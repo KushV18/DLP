@@ -1,0 +1,6 @@
+@echo off
+echo Compiling %1.l with Flex...
+flex %1.l
+echo Compiling generated C code...
+gcc lex.yy.c -o %1.exe
+echo Done! Run %1.exe to execute your program.
